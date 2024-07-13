@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: top;
+            justify-content: top;
+            height: 100vh;
+            margin: 0;
+        }
+        h1, p, form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>SRM UNIVERSITY OF SCIENCE AND TECHNOLOGY</h1>
+    <p>Exam Name: PYTHON CT2</p>
+    <p>Start Time: 10:00 AM</p>
+    <form method="POST" action="/mcq_questions">
+        <input type="submit" value="Start Test">
+    </form>
+</body>
+</html>

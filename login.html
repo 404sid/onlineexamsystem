@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+          text-align: center;
+        }
+        
+    
+        </style>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="POST" action="/exam_details">
+        <label for="username">Username: </label>
+        <input type="text" name="username" required>
+        <br><br>
+        <label for="password">Password: </label>
+        <input type="password" name="password" required>
+        <br><br>
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h1 style="text-align: center;">Exam Result</h1>
+        <p style="text-align: center; font-size: 18px;">Your score: {{ score }} out of 10</p>
+        <p style="text-align: center;">Thank you for taking the exam!</p>
+    </div>
+
+    <style>
+        /* Internal CSS for the result page */
+        .result-container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .result-container h1 {
+            color: #333;
+        }
+
+        .result-container p {
+            color: #333;
+            margin: 10px 0;
+        }
+    </style>
+</body>
+</html>

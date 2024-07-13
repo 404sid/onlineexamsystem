@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        p {
+            color: #666;
+        }
+        
+        input[type="radio"] {
+            margin: 5px;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+    
+    <title>MCQ Questions</title>
+</head>
+<body><!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <h1>MCQ Questions</h1>
+        <form method="POST" action="/exam_result">
+            <p>1. What is Python?</p>
+            <label><input type="radio" name="q1" value="a"> a) A type of snake</label>
+            <label><input type="radio" name="q1" value="b"> b) A high-level programming language</label>
+            <label><input type="radio" name="q1" value="c"> c) A popular coffee brand</label>
+            <label><input type="radio" name="q1" value="d"> d) A computer hardware component</label>
+            <br><br>
+            <p>2.Which of the following is NOT a valid Python data type?</p>
+            <label><input type="radio" name="q2" value="a"> a) int</label>
+            <label><input type="radio" name="q2" value="b"> b) str</label>
+            <label><input type="radio" name="q2" value="c"> c) list</label>
+            <label><input type="radio" name="q2" value="d"> d) class</label>
+            <br><br>
+            <p>3.In Python, which keyword is used to define a function?</p>
+            <label><input type="radio" name="q3" value="a"> a) func</label>
+            <label><input type="radio" name="q3" value="b"> b) method</label>
+            <label><input type="radio" name="q3" value="c"> c) def</label>
+            <label><input type="radio" name="q3" value="d"> d) declare</label>
+            <br><br>
+            <p>4.What is the result of 7 + 3.0 in Python?</p>
+            <label><input type="radio" name="q4" value="a"> a) 10</label>
+            <label><input type="radio" name="q4" value="b"> b) 10.0</label>
+            <label><input type="radio" name="q4" value="c"> c) 73.0</label>
+            <label><input type="radio" name="q4" value="d"> d) Error</label>
+            <br><br>
+            <p>5.Which of the following is used for single-line comments in Python?</p>
+            <label><input type="radio" name="q5" value="a"> a) // Comment</label>
+            <label><input type="radio" name="q5" value="b"> b) /* Comment */</label>
+            <label><input type="radio" name="q5" value="c"> c) # Comment</label>
+            <label><input type="radio" name="q5" value="d"> d) &lt;!-- Comment --&gt;</label>
+            <br><br>
+            <p>6.How do you define an empty list in Python?</p>
+            <label><input type="radio" name="q6" value="a"> a) empty = list()</label>
+            <label><input type="radio" name="q6" value="b"> b) empty = []</label>
+            <label><input type="radio" name="q6" value="c"> c) empty = {}</label>
+            <label><input type="radio" name="q6" value="d"> d) empty = ()</label>
+            <br><br>
+            <p>7.What is the purpose of the 'if' statement in Python?</p>
+            <label><input type="radio" name="q7" value="a"> a) Loop through elements</label>
+            <label><input type="radio" name="q7" value="b"> b) Define a function</label>
+            <label><input type="radio" name="q7" value="c"> c) Make decisions based on conditions</label>
+            <label><input type="radio" name="q7" value="d"> d) Define a class</label>
+            <br><br>
+            <p>8.Which function is used to read input from the user in Python?</p>
+            <label><input type="radio" name="q8" value="a"> a) read_input()</label>
+            <label><input type="radio" name="q8" value="b"> b) input()</label>
+            <label><input type="radio" name="q8" value="c"> c) get_input()</label>
+            <label><input type="radio" name="q8" value="d"> d) user_input()</label>
+            <br><br>
+            <p>9.What is the operator for exponentiation in Python?</p>
+            <label><input type="radio" name="q9" value="a"> a) **</label>
+            <label><input type="radio" name="q9" value="b"> b) ^</label>
+            <label><input type="radio" name="q9" value="c"> c) //</label>
+            <label><input type="radio" name="q9" value="d"> d) %</label>
+            <br><br>
+            <p>10.Which of the following is a valid way to import a module in Python?</p>
+            <label><input type="radio" name="q10" value="a"> a) include module_name</label>
+            <label><input type="radio" name="q10" value="b"> b) import module_name</label>
+            <label><input type="radio" name="q10" value="c"> c) require module_name</label>
+            <label><input type="radio" name="q10" value="d"> d) load module_name</label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+    </html>
+    
+
